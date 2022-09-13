@@ -9,12 +9,16 @@ ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /api/
 
-COPY ./package.json ./yarn.lock ./
+#COPY ./package.json ./yarn.lock ./ (Previous Dockerfile)
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
 
 ENV PATH /api/node_modules/.bin:$PATH
-RUN yarn config set network-timeout 600000 -g && yarn install
+RUN yarn config set network-timeout 600000 -g
+RUN yarn install
 
-WORKDIR /api
+#WORKDIR /api
 COPY ./ .
 # Yarn Build
 RUN yarn build
