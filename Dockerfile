@@ -4,22 +4,23 @@ FROM node:16
 RUN apt-get update && apt-get install libvips-dev -y
 
 # Environment Settings
-ARG NODE_ENV=production
+ARG NODE_ENV=production yarn build
 ENV NODE_ENV=${NODE_ENV}
 
-WORKDIR /api
+WORKDIR /api/
 
-#COPY ./package.json ./yarn.lock ./ (Previous Dockerfile)
-COPY package.json .
-COPY yarn.lock .
+COPY ./api/package.json ./api/yarn.lock ./
+#COPY package.json .
+#COPY yarn.lock .
 
 
 ENV PATH /api/node_modules/.bin:$PATH
 RUN yarn config set network-timeout 600000 -g
-RUN yarn install –frozen-lockfile
+RUN yarn install
+#RUN yarn add –frozen-lockfile
 
 #WORKDIR /api
-COPY ./ .
+COPY ./api .
 # Yarn Build
 RUN yarn build
 
