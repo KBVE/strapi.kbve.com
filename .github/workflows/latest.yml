@@ -61,7 +61,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Publish image to Github Packages
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           username: $GITHUB_ACTOR
           password: ${{ secrets.GITHUB_TOKEN }}
