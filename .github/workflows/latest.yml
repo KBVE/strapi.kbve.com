@@ -69,4 +69,5 @@ jobs:
           repository: kbve/api.kbve.com/api.kbve.com
           tag_with_sha: true
           tag_with_ref: true
+          buildkitd-flags: --debug
   
