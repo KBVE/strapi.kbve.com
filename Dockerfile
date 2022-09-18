@@ -1,7 +1,7 @@
 FROM node:16
 
 # Update and install LibVips
-RUN apt-get update && apt-get install libvips-dev -y
+RUN apt-get update && apt-get install libvips-dev libtool automake autoconf nasm -y
 
 # Environment Settings
 ARG NODE_ENV=production yarn build
@@ -25,5 +25,7 @@ COPY ./api .
 RUN yarn build
 
 # Run on port 1337
-EXPOSE 1337
-CMD ["yarn", "develop"] 
+#EXPOSE 1337
+#CMD ["/bin/sh", "ENV_PATH=/env.config", "yarn start"] 
+
+# docker build -t test:1.1.0 .
