@@ -25,7 +25,8 @@ COPY ./api .
 RUN yarn build
 
 # Run on port 1337
-#EXPOSE 1337
-#CMD ["/bin/sh", "ENV_PATH=/env.config", "yarn start"] 
+EXPOSE 1337
+#CMD ["yarn", "ENV_PATH=/env.config", "start"] 
+CMD ["yarn", "start"]
 
 # docker build -t test:1.1.0 .
