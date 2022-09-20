@@ -1,3 +1,5 @@
+# ! DEPRECATED: use ecosystem.config.js
+
 apps:
   #- script            : 'package.json'
   - script            : 'yarn'
