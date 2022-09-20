@@ -1,0 +1,12 @@
+apps:
+  #- script            : 'package.json'
+  - script            : 'yarn'
+    name              : 'kbve-api'
+    instances         : 1
+    exec_mode         : cluster
+    interpreter       : "/bin/bash"
+    #interpreter_args  : "/usr/local/bin/yarn start"
+    args              : "start"
+
+# Issue https://github.com/KBVE/kbve.com/issues/29#issue-1372050834
+# Reference [16] https://stackoverflow.com/questions/67010589/getting-errors-when-trying-to-start-app-via-yarn-pm2
