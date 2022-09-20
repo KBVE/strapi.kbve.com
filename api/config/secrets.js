@@ -1,6 +1,7 @@
 // Original Gist is from Patrick Kalkman
 // We will modify the file to help fit in with Strapi
 // dependencies
+// Secrets for local Dev.
 const fs = require('fs');
 
 const dockerSecret = {};
