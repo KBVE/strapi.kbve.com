@@ -32,5 +32,19 @@ dockerSecret.path_read = function path_read(secretNameAndPath) {
   }
 };
 
+dockerSecret.array_read = function path_read(secretNameAndPath) {
+  try {
+    return fs.readFileSync(`/run/secrets/${secretNameAndPath}`, 'utf8').split(',');
+  } catch(err) {
+    if (err.code !== 'ENOENT') {
+      console.log(`An error occurred while trying to read the secret: (/run/secrets/) + ${secretNameAndPath}. Err: ${err}`);
+    } else {
+      console.log(`Could not find the secret, probably not running in swarm mode: (/run/secrets/) + ${secretNameAndPath}. Err: ${err}`);
+    }
+    return false;
+  }
+};
+
+
 
 module.exports = dockerSecret;

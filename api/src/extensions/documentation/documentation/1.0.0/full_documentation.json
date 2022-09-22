@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-09-20T23:09:17.929Z"
+    "x-generation-date": "2022-09-22T17:51:55.383Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5654,6 +5654,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6217,6 +6223,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6813,6 +6825,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -7376,6 +7394,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -7711,6 +7735,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "discord_server_id": {
+                                                        "type": "string",
+                                                        "pattern": "^\\d*$",
+                                                        "example": "123456789"
+                                                      },
+                                                      "public_key": {},
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -8303,6 +8333,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "discord_server_id": {
+                                                        "type": "string",
+                                                        "pattern": "^\\d*$",
+                                                        "example": "123456789"
+                                                      },
+                                                      "public_key": {},
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -8928,6 +8964,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "discord_server_id": {
+                                                        "type": "string",
+                                                        "pattern": "^\\d*$",
+                                                        "example": "123456789"
+                                                      },
+                                                      "public_key": {},
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -9520,6 +9562,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "discord_server_id": {
+                                                        "type": "string",
+                                                        "pattern": "^\\d*$",
+                                                        "example": "123456789"
+                                                      },
+                                                      "public_key": {},
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -10043,7 +10091,13 @@
                   }
                 ],
                 "example": "string or id"
-              }
+              },
+              "discord_server_id": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "public_key": {}
             }
           }
         }
@@ -10487,6 +10541,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -10584,6 +10644,12 @@
                   }
                 }
               },
+              "discord_server_id": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "public_key": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -11069,6 +11135,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -11166,6 +11238,12 @@
                   }
                 }
               },
+              "discord_server_id": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "public_key": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -11684,6 +11762,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -11781,6 +11865,12 @@
                   }
                 }
               },
+              "discord_server_id": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "public_key": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -12266,6 +12356,12 @@
                                             }
                                           }
                                         },
+                                        "discord_server_id": {
+                                          "type": "string",
+                                          "pattern": "^\\d*$",
+                                          "example": "123456789"
+                                        },
+                                        "public_key": {},
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -12363,6 +12459,12 @@
                   }
                 }
               },
+              "discord_server_id": {
+                "type": "string",
+                "pattern": "^\\d*$",
+                "example": "123456789"
+              },
+              "public_key": {},
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
