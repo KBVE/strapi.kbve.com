@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:lts-bullseye-slim
 
 # Update and install LibVips
 RUN apt-get update && apt-get install libvips-dev libtool automake autoconf nasm -y
