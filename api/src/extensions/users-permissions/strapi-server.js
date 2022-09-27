@@ -22,7 +22,11 @@ module.exports = (plugin) => {
 
 
     try {
+
+      console.log('HCaptcha Start');
       console.log(hcaptcha);
+      console.log('HCaptcha End');
+
       let { success } = await verify(hcaptcha, token)
 
       if (success) {

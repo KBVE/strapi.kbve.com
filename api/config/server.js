@@ -7,4 +7,6 @@ module.exports = ({ env }) => ({
   app: {
     keys: secrets.array_read(env('APP_KEYS_FILE')) || env.array('APP_KEYS'),
   },
+  hcaptcha: secrets.read(env('HCAPTCHA_FILE')) || env('HCAPTCHA', 'key'),
+
 });
