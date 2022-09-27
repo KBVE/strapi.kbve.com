@@ -20,7 +20,9 @@ module.exports = (plugin) => {
 
     // Verify is from the [NPMJS Package -> hcaptcha] || [yarn add hcaptcha]
 
+
     try {
+      console.log(hcaptcha);
       let { success } = await verify(hcaptcha, token)
 
       if (success) {
