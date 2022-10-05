@@ -7,7 +7,6 @@ module.exports = (plugin) => {
     ctx.request.body.confirmed = false;
     const token = ctx.request.body.token;
     const hcaptcha = strapi.config.get('server.hcaptcha');
-
     console.log('Test Case');
 
     //const hcaptcha = env.hcaptcha;
@@ -32,26 +31,36 @@ module.exports = (plugin) => {
 
     try {
 
-      let { success } = await verify(hcaptcha, token)
+      // let {
+      //     success,
+      //     challenge_ts,
+      //     hostname,
+      //     credit,
+      //   } = await verify(hcaptcha, token)
 
-      if (success) {
+
+      let result = await verify(hcaptcha, token)
+
+      console.log(result);
+
+      if (result.success) {
+
         console.log('success!', data);
         register(ctx);
         //  ctx.send({ message: 'success' });
         //  next();
       } else {
-        console.log('failed');
-        return ctx.badRequest(
-          null,
-          formatError({
-            id: "Auth.form.error.token.provide",
-            message: "Please provide a valid token.",
-          })
-        );
+
+        console.log(result.error);
+        console.log(result.challenge_ts);
+        console.log(result.hostname);
+        console.log('failed at line 57');
+
+        return ctx.throw(500, 'Verify Order 44. Failed')
       }
     }
       catch (error) {
-        return ctx.throw(500, 'Captcha not verified')
+        return ctx.throw(418, 'Captcha not verified')
     }
 
   };

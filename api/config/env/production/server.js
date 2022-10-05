@@ -8,5 +8,5 @@ module.exports = ({ env }) => ({
   app: {
     keys: secrets.array_read(env('APP_KEYS_FILE')) || env.array('APP_KEYS'),
   },
-  hcaptcha: secrets.read(env('HCAPTCHA_FILE')) || env('HCAPTCHA', 'key'),
+  hcaptcha: secrets.read(env('HCAPTCHA_FILE')) || env('HCAPTCHA', '0x0000000000000000000000000000000000000000'),
 });
