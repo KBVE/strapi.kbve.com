@@ -7,6 +7,9 @@ module.exports = (plugin) => {
     ctx.request.body.confirmed = false;
     const token = ctx.request.body.token;
     const hcaptcha = strapi.config.get('server.hcaptcha');
+
+    console.log('Test Case');
+
     //const hcaptcha = env.hcaptcha;
 
     /*
@@ -19,7 +22,13 @@ module.exports = (plugin) => {
     */
 
     // Verify is from the [NPMJS Package -> hcaptcha] || [yarn add hcaptcha]
-
+    console.log('----- [Hcaptcha] [START]');
+    console.log(hcaptcha);
+    console.log('----- [Hcaptcha] [END]');
+    console.log('------------------');
+    console.log('----- [Token] [START]');
+    console.log(token);
+    console.log('----- [Token] [END]');
 
     try {
 
