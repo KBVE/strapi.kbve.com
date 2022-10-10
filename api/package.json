@@ -12,12 +12,12 @@
   "devDependencies": {},
   "dependencies": {
     "@hcaptcha/types": "^1.0.2",
-    "@strapi/plugin-documentation": "^4.3.9",
-    "@strapi/plugin-i18n": "4.3.9",
-    "@strapi/plugin-users-permissions": "4.3.9",
-    "@strapi/strapi": "4.3.9",
+    "@strapi/plugin-documentation": "4.4.3",
+    "@strapi/plugin-i18n": "4.4.3",
+    "@strapi/plugin-users-permissions": "4.4.3",
+    "@strapi/strapi": "4.4.3",
     "axios": "^0.27.2",
-    "better-sqlite3": "7.6.2",
+    "better-sqlite3": "7.4.6",
     "hcaptcha": "^0.1.1",
     "mysql": "^2.18.1"
   },
