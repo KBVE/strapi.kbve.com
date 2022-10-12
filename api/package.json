@@ -17,7 +17,7 @@
     "@strapi/plugin-users-permissions": "4.4.3",
     "@strapi/strapi": "4.4.3",
     "axios": "^0.27.2",
-    "better-sqlite3": "7.4.6",
+    "better-sqlite3": "7.6.2",
     "hcaptcha": "^0.1.1",
     "mysql": "^2.18.1"
   },
