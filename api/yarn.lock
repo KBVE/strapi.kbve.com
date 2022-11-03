@@ -1279,10 +1279,10 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@hcaptcha/types@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.2.tgz#d4d41321e71ec79c7aec22c952840670a76d6284"
-  integrity sha512-0f//oG8XZrqaLZ+ggjcqF99t91w5UEpv61CJWu57WWsN6AZ1PXqqzXmcgTlr3RhlNe2zjymYZTkPeyqiek/DEQ==
+"@hcaptcha/types@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/types/-/types-1.0.3.tgz#baf10a4361a45ff1c64862dfb8dc9bbc8292a8fe"
+  integrity sha512-1mbU6eSGawRrqeahRrOzZo/SVLI6oZ5/azuBpSyVrRRR96CnS3fOVDWfzxpngfxKD0/I9Rwu6c/3ITqD8rXeTQ==
 
 "@internationalized/number@^3.1.1":
   version "3.1.1"
