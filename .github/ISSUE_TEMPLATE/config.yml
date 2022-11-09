@@ -1,4 +1,4 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: Open issue on KBVE
     url: https://github.com/KBVE/kbve.com/issues/new/choose
