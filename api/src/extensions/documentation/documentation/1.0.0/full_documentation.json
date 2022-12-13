@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-11-09T16:54:42.652Z"
+    "x-generation-date": "2022-12-13T18:29:50.890Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -12749,7 +12749,7 @@
           {
             "name": "pagination[withCount]",
             "in": "query",
-            "description": "Retun page/pageSize (default: true)",
+            "description": "Return page/pageSize (default: true)",
             "deprecated": false,
             "required": false,
             "schema": {
@@ -12826,6 +12826,16 @@
               "type": "object"
             },
             "style": "deepObject"
+          },
+          {
+            "name": "locale",
+            "in": "query",
+            "description": "Locale to apply",
+            "deprecated": false,
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "operationId": "get/upload/files"
