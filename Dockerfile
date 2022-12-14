@@ -1,5 +1,6 @@
 # Currently Node 16, lets see bump it up to Node 18.
-FROM node:18-bullseye
+# Bump was not great, reverting
+FROM node:16-bullseye
 
 # Update and install LibVips
 RUN apt-get update && apt-get install libvips-dev libtool automake autoconf nasm -y
