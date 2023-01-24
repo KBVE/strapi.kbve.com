@@ -20,7 +20,8 @@
     "axios": "^0.27.2",
     "better-sqlite3": "7.6.2",
     "hcaptcha": "^0.1.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "strapi-prometheus": "^1.4.0"
   },
   "author": {
     "name": "A Strapi developer"
