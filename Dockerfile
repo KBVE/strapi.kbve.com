@@ -1,6 +1,5 @@
-# Currently Node 16, lets see bump it up to Node 18.
-# Bump was not great, reverting
-FROM node:18-bullseye
+# Switching to LTS-Bullseye as Synk was giving warnings.
+FROM node:lts-bullseye-slim
 
 # Update and install LibVips
 RUN apt-get update && apt-get install libvips-dev libtool automake autoconf nasm -y
