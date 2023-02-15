@@ -1,17 +1,25 @@
 // Secrets
-const secrets = require('./secrets');
+const secrets = require("./secrets");
 
 module.exports = ({ env }) => ({
   "users-permissions": {
     config: {
-      jwtSecret: secrets.read(env('JWT_SECRET_FILE')) ||  env('JWT_SECRET', '5c60d7e83951c8844ba088ef68bff791'),
-    }
+      jwtSecret:
+        secrets.read(env("JWT_SECRET_FILE")) ||
+        env("JWT_SECRET", "5c60d7e83951c8844ba088ef68bff791"),
+    },
   },
-  'strapi-prometheus': {
+  // pfapi: {
+  //   enabled: true,
+  //   config: {
+  //     redis_uri: env('REDIS_URI'),
+  //   }
+  // },
+  "strapi-prometheus": {
     enabled: true,
     config: {
       // add prefix to all the prometheus metrics names.
-      prefix: '',
+      prefix: "",
 
       // use full url instead of matched url
       // true  => path label: `/api/models/1`
@@ -28,7 +36,7 @@ module.exports = ({ env }) => ({
         koa: true, // koa metrics
         process: true, // metrics regarding the running process
         http: true, // http metrics like response time and size
-        apollo: true // metrics regarding graphql
+        apollo: true, // metrics regarding graphql
       },
 
       // interval at which rate metrics are collected in ms
@@ -38,6 +46,6 @@ module.exports = ({ env }) => ({
       customLabels: {
         name: "strapi-prometheus",
       },
-    }
-  }
-})
+    },
+  },
+});
