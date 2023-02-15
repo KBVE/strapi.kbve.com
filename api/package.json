@@ -22,6 +22,7 @@
     "better-sqlite3": "7.6.2",
     "hcaptcha": "^0.1.1",
     "mysql": "^2.18.1",
+    "strapi-plugin-wysiwyg-react-md-editor": "^4.3.0",
     "strapi-prometheus": "^1.4.0"
   },
   "author": {
