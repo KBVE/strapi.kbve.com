@@ -1,7 +1,7 @@
 {
   "name": "api",
   "private": true,
-  "version": "4.6.1",
+  "version": "4.6.2",
   "description": "A Strapi-based API",
   "scripts": {
     "develop": "strapi develop",
@@ -13,11 +13,11 @@
   "devDependencies": {},
   "dependencies": {
     "@hcaptcha/types": "^1.0.3",
-    "@strapi/plugin-documentation": "4.6.1",
-    "@strapi/plugin-i18n": "4.6.1",
-    "@strapi/plugin-users-permissions": "4.6.1",
-    "@strapi/provider-email-sendgrid": "^4.6.1",
-    "@strapi/strapi": "4.6.1",
+    "@strapi/plugin-documentation": "4.6.2",
+    "@strapi/plugin-i18n": "4.6.2",
+    "@strapi/plugin-users-permissions": "4.6.2",
+    "@strapi/provider-email-sendgrid": "4.6.2",
+    "@strapi/strapi": "4.6.2",
     "axios": "^0.27.2",
     "better-sqlite3": "7.6.2",
     "hcaptcha": "^0.1.1",
