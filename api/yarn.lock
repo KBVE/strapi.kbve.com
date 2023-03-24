@@ -2062,13 +2062,13 @@
   resolved "https://registry.yarnpkg.com/@strapi/provider-audit-logs-local/-/provider-audit-logs-local-4.7.0.tgz#3f183bd731aba8000d430422bc50d724509a6036"
   integrity sha512-LpzGkKd6mdLIwXLomFLf4/J5QSBP/QP2mSV9MsX2aPhzDk8arVP8wgjuEj6f7PKvmju1jYpj0w6gb2p3LdZ5QQ==
 
-"@strapi/provider-email-sendgrid@4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-email-sendgrid/-/provider-email-sendgrid-4.7.0.tgz#92592fabd568babe584d5683335556956269c568"
-  integrity sha512-kMe0o0rU9dNVQ6L7wRSKo+5EFOLwDeJ407IS8+7sAppesZzfeTMzKAY0sTRMVb6QnCVRX/k/5oFi/INYKK1YdQ==
+"@strapi/provider-email-sendgrid@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-email-sendgrid/-/provider-email-sendgrid-4.7.1.tgz#ce03a44411763f2f394089a3cf116a842e71f779"
+  integrity sha512-SwZ3319Xlj39FrH+hMiGIJvFK2LfkadL4+ZdQQ3PIb1+KK7MK+PiMAXXJXBt9Bq18+porg/HFir09tOmfcFd2A==
   dependencies:
     "@sendgrid/mail" "7.7.0"
-    "@strapi/utils" "4.7.0"
+    "@strapi/utils" "4.7.1"
 
 "@strapi/provider-email-sendmail@4.7.0":
   version "4.7.0"
@@ -2162,6 +2162,18 @@
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.7.0.tgz#423e01d93010379ba43cd73a2ba07ee86bd1ef17"
   integrity sha512-E1+dYjFWJdXTq1XnRt/DoFrMXc23UFQf/mB2BTCBEq/ajV3QDhbritAQM30XMpGPSFaOJoLs7earT/1GGuv2TQ==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.29.3"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.7.1.tgz#d019f9f10d3856e1aff3ffe670ad7564b6005ad8"
+  integrity sha512-qlUG5//Rk1Yr+PYcE9S+Q76qjxFIQBZEkw8psk6E287bO8Fd7AKshF1HXaQJkSD+hncYnPmLt5Uhe/r22xX/PA==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.29.3"
