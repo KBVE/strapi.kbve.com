@@ -11,6 +11,13 @@ module.exports = ({ env }) => ({
     salt: secrets.read(env('API_TOKEN_FILE')) || env('API_TOKEN_SECRET', '5c60d7e83951c8844ba088ef68bff791'),
   },
 
+  // Transfer Token
+  transfer: {
+    token: {
+      salt: secrets.read(env('TRANSFER_TOKEN_SALT_FILE')) || env('TRANSFER_TOKEN_SALT', '5c60d7e83951c8844ba088ef68bff791'),
+    },
+  },
+
   url: env('PUBLIC_ADMIN_URL', '/dashboard'),
   serveAdminPanel: env.bool('SERVE_ADMIN', true),
 });
