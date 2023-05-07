@@ -4,17 +4,17 @@
     "version": "1.0.0",
     "title": "DOCUMENTATION",
     "description": "",
-    "termsOfService": "https://kbve.com/legal/tos/",
+    "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
     "contact": {
       "name": "TEAM",
-      "email": "hi@kbve.com",
-      "url": "kbve.com"
+      "email": "contact-email@something.io",
+      "url": "mywebsite.io"
     },
     "license": {
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-04-30T12:24:49.580Z"
+    "x-generation-date": "2023-05-07T07:49:40.002Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
