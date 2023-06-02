@@ -20,7 +20,7 @@
     "@strapi/plugin-i18n": "^4.10.2",
     "@strapi/plugin-users-permissions": "^4.10.2",
     "@strapi/provider-email-sendgrid": "^4.10.2",
-    "@strapi/strapi": "^4.10.2",
+    "@strapi/strapi": "^4.10.5",
     "axios": "^1.4.0",
     "better-sqlite3": "^8.3.0",
     "hcaptcha": "^0.1.1",
