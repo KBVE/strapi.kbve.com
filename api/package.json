@@ -22,7 +22,7 @@
     "@strapi/provider-email-sendgrid": "^4.10.2",
     "@strapi/strapi": "^4.10.2",
     "axios": "^1.4.0",
-    "better-sqlite3": "^8.3.0",
+    "better-sqlite3": "^8.4.0",
     "hcaptcha": "^0.1.1",
     "mysql": "^2.18.1",
     "strapi-plugin-wysiwyg-react-md-editor": "^4.3.0",
